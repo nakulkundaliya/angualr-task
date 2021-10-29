@@ -1,0 +1,28 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  width: 500px;
+}
+
+.submit-btn {
+  width: 100px;
+  padding: 5px;
+  font-size: 16px;
+  margin: 0px 10px;
+}
+
+.input {
+  width: 500px !important;
+}
+
+.form {
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+}

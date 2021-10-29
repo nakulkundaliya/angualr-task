@@ -1,0 +1,53 @@
+<div class="content">
+ 
+  <!-- <form
+    [formGroup]="colleagueFormGroup"
+    (ngSubmit)="updateColleague(colleagueFormGroup.value)"
+  > -->
+  <div *ngIf="action != 'Delete'; else elseTemplate" class="form">
+    <h2>{{action}} Colleague</h2>
+    <mat-form-field appearance="fill" class="input">
+      <mat-label>First Name</mat-label>
+      <input matInput [(ngModel)]="data.firstname" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input">
+      <mat-label>Last Name</mat-label>
+      <input matInput [(ngModel)]="data.lastname" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input">
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="data.email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input">
+      <mat-label>Job</mat-label>
+      <input matInput [(ngModel)]="data.job" />
+    </mat-form-field>
+  </div>
+
+  <ng-template #elseTemplate>
+    <h2>Are you Sure you want to delete this colleague?</h2>
+  </ng-template>
+  <div class="btns">
+    <button
+    mat-raised-button
+    color="primary"
+    class="submit-btn"
+    (click)="doAction()"
+  >
+    {{ action }}
+  </button>
+  <button
+    mat-raised-button
+    color="warn"
+    class="submit-btn"
+    (click)="closeDialog()"
+  >
+    Cancel
+  </button>
+  </div>
+
+  <!-- </form> -->
+</div>

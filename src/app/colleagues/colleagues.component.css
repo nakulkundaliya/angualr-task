@@ -1,0 +1,32 @@
+.content {
+  padding: 50px 100px;
+}
+
+.header {
+  font-size: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+.table-cell {
+  padding: 10px 0px !important;
+  width: 250px;
+}
+
+.delete {
+  margin-left: 20px;
+}
+
+.add {
+  margin: 20px 0px;
+  display: flex;
+  margin-left: 90%;
+}
+
+.add-btn {
+  width: 180px;
+  padding: 5px;
+  font-size: 16px;
+}
